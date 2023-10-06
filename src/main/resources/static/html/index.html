@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mi pagin web para la tarea de la U">
+    <meta name="keywords" content="html5, css3, web, fidélitas">
+    <link rel="stylesheet" type="text/css" href="estilo/estilos.css">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo_lateral.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <div class="container-fluid d-flex justify-content-center align-items-center">
+                    <!-- Botones Izquierda -->
+                    <div class="nav-container">
+                        <ul class="nav nav-pills mb-3" id="menu-principal1" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link me-3 rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab"
+                                    aria-selected="true">Animes</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link me-3 rounded-pill" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-selected="false">ndings</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link  me-3 rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab"
+                                    aria-selected="true">Openings</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="logo-container" id="logo">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/main/logo.sv" class="logo-img">
+                        </a>
+                    </div>
+
+                    <!-- Botones Derecha -->
+                    <div class="nav-container">
+                        <ul class="nav nav-pills mb-3" id="menu-principal2" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link me-3 rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab"
+                                    aria-selected="true">Personajes</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link me-3 rounded-pill" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-selected="false">Wallpapers</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link me-3 rounded-pill" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab"
+                                    aria-selected="true">Videos</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Enlace</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Acción</a></li>
+                                        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+
+
+        <!-- Alerta de cookies -->
+        <div class="alert alert-warning alert-dismissible fade show fixed-bottom" role="alert"
+            style="text-align: center;">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <strong> Esta página usa Cookies 🍪 para su funcionamiento. </strong>
+            <button type="button" class="btn btn-success" data-bs-dismiss="alert" id="acceptButton">ACEPTAR</button>
+        </div>
+
+        <!-- Barra de navegación Flotante-->
+        <div class="vh-100 d-flex align-items-center position-fixed start-0 top-0" role="navigation">
+            <div class="p-2">
+                <div id="mainNav">
+                    <button id="toggleMenu" class="btn btn-info" style=" color: #ffffff; height: 35px;
+                    width: 72px; text-align: center; background: #810505; margin-left: 10%; border: 1px solid black;">
+                        Ocultar
+                    </button>
+                    <ul class="list-unstyled rounded ms-2" id="menu-secundario">
+                        <li>
+                            <a class="vlink rounded border-0" href="#">
+                                <img src="img/facebook.svg" alt="Facebook">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="vlink rounded border-0" href="#">
+                                <img src="img/main/whatsapp.svg" alt="WhatsApp">
+                                <span>WhatsApp</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="vlink rounded border-0" href="#">
+                                <img src="img/main/instagram.svg" alt="Instagram">
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="vlink rounded border-0" href="#">
+                                <img src="/src/main/resources/static/img/main/youtube.svg" alt="YouTube">
+                                <span>YouTube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carrusel-->
+    <section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Naruto"></button>
+
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Sasuke"></button>
+
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Itachi"></button>
+
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Kakashi"></button>
+
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                    aria-label="Sai"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="img/banners/Naruto.jpg" class="d-block w-100" alt="Naruto"
+                        height="180">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/banners/Sasuke.jpg" class="d-block w-100" alt="Sasuke"
+                        height="180">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/banners/Naruto.jpg" class="d-block w-100" alt="Itachi"
+                        height="180">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/banners/Kakashi.jpg" class="d-block w-100" alt="Kakashi"
+                        height="180">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img/banners/Sai.jpg" class="d-block w-100" alt="Sai"
+                        height="180">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <div class="titulo">
+            <p>¡Bienvenido! Este es mi Top 5 de animes </p>
+        </div>
+
+        <!-- Contenido de la sección principal -->
+        <div class="main-content">
+
+            <div class="main-content">
+                <div class="contenido-home">
+                    <div class="imagenes">
+                        <img src="main/contenido/narutoportada.webp" alt="" />
+                    </div>
+                    <div class="texto">
+                        <br>
+                        <img src="img/main/logo.svg" alt="" />
+                        <p style="color: black; font-size: 25px;">
+                            <strong>Sinopsis</strong>
+                        </p>
+                        <p>Dos años después del final de Naruto, el protagonista de la historia regresa a la Villa
+                            Oculta de la Hoja,
+                            en compañía de su maestro Jiraiya, después de haber superado un duro entrenamiento.
+                            Lo que comienza como un bello reencuentro con sus compañeros ninja termina en una guerra
+                            constante contra
+                            el misterioso grupo Akatsuki, el cual amenaza la estabilidad y la paz de todo el mundo
+                            Shinobi. Esta parte,
+                            que se corresponde con el timeskip de la trama, recibe el nombre de Naruto
+                            Shippuden.<br><br>
+
+                            Fecha de estreno: Invierno de 2007<br>
+                            Duración: 23 minutos por episodio (500 ep.)<br>
+                            Pais: Japón<br>
+                            Género: Shonen, Acción, Aventura, Comedia<br>
+                            Productora: Studio Pierrot<br>
+                            Distribuidora: Crunchyroll<br>
+                            Director: Hayato Date, Hiroyuki Yamashita, Osamu Kobayashi<br>
+                            Guionista: Osamu Kobayashi, Liam O'Brien, Yasayuki Suzuki, Daisuke Watanabe
+
+                        </p>
+                    </div>
+                </div>
+                <hr class="reglon" />
+
+                <div class="contenido-home">
+                    <div class="imagenes">
+
+                        <img src="img/main/contenido/onepieceportada.webp" alt="" />
+                    </div>
+                    <div class="texto">
+                        <img src="img/main/contenido/onepiecelogo.webp" alt="" />
+                        <p style="color: black; font-size: 25px;">
+                            <strong>Sinopsis</strong>
+                        </p>
+                        <p>One Piece (ワンピース Wan Pīsu) es un manga escrito e ilustrado por Eiichirō Oda.
+                            Comenzó a publicarse en la revista japonesa Weekly Shōnen Jump el 22 de julio de 1997. Por
+                            otra parte,
+                            Toei Animation realiza el anime y se transmite en Fuji TV desde el 20 de octubre de 1999 el
+                            cual está en emisión actualmente.
+                            Larp Editores licenció el manga en Argentina y posteriormente fue retomado por Ivrea.
+                            En España principalmente la publicación estaba a manos de Planeta De Agostini y después pasó
+                            a manos de Planeta Cómic el cual se encarga actualmente de su publicación.
+                            En México fue publicado por Editorial Toukan en un principio y, más tarde, por Panini
+                            Comics.<br><br>
+
+                            Fecha de estreno: 20 de octubre de 1999 <br>
+                            Duración: 23:50 minutos por episodio<br>
+                            Pais: Japón<br>
+                            Género: Acción, aventura<br>
+                            Productora: Eiichirō Oda<br>
+                            Distribuidora: Toei Animation<br>
+                            Director: Kōnosuke Uda<br>
+                            Guionista: Eiichirō Oda
+
+                        </p>
+                    </div>
+                </div>
+                <hr class="reglon" />
+
+                <div class="contenido-home">
+                    <div class="imagenes">
+                        <img src="/src/main/resources/static/img/main/contenido/hunterxhunterportada.webp" alt="" />
+                    </div>
+                    <div class="texto">
+                        <img src=".../img/main/contenido/hunterxhunterlogo.png" alt="" />
+                        <p style="color: black; font-size: 25px;">
+                            <strong>Sinopsis</strong>
+                        </p>
+                        <p>Hunter x Hunter cuenta la historia de Gon, un niño de 12 años que,
+                            tras enterarse de que su padre sigue con vida, sueña con convertirse en un cazador para
+                            poder encontrarlo.
+                            Durante su camino, este joven hará buenas migas con otros aspirantes a cazador llamados
+                            Leorio, Kurapika y Killua,
+                            los cuales tienen sus propias motivaciones y secretos. Por desgracia para Gon, su viaje
+                            estará lleno de peligros,
+                            misterios y desafíos que deberá superar.<br><br>
+
+                            Fecha de estreno: 02/10/2011<br>
+                            Duración: 148 episodios (23 min. por ep.)<br>
+                            Pais: Japón<br>
+                            Género: Aventura | Acción | Fantasía<br>
+                            Productora: Madhouse<br>
+                            Distribuidora: Crunchyroll<br>
+                            Director: Hiroshi Koujina<br>
+                            Guionista: Jun Maekawa (manga de Yoshihiro Togashi)
+                        </p>
+                    </div>
+                </div>
+                <hr class="reglon" />
+
+                <div class="contenido-home">
+                    <div class="imagenes">
+                        <img src="/src/main/resources/static/img/main/contenido/bakiportada.webp" alt="" />
+                    </div>
+                    <div class="texto">
+                        <img src="/src/main/resources/static/img/main/contenido/bakilogo.svg" alt="" />
+                        <p style="color: black; font-size: 25px;">
+                            <strong>Sinopsis</strong>
+                        </p>
+                        <p>Se narra la historia de Baki Hanma, un prometedor luchador de artes marciales que tras
+                            superar
+                            todo entrenamiento sin complicaciones en pos de batir a su padre, Yujiro Hanma, se ve
+                            derrotado sin dificultades
+                            por este mismo. Después de esto, empieza a viajar por el mundo para seguir su entrenamiento
+                            hasta encontrar una arena repleta de grandes luchadores de toda clase de artes marciales,
+                            y es aquí que empieza a pulir realmente sus cualidades como luchador.<br><br>
+
+                            Fecha de estreno: 25/06/2018<br>
+                            Duración: 26 episodios<br>
+                            Pais: Japón<br>
+                            Género: Acción<br>
+                            Productora: TMS Entertainment<br>
+                            Distribuidora: Netflix<br>
+                            Director: Toshiki Hirano<br>
+                            Guionista: Tatsuhiko Urahata (manga de Keisuke Itagaki)
+                        </p>
+                    </div>
+                </div>
+                <hr class="reglon" />
+
+                <div class="contenido-home">
+                    <div class="imagenes">
+                        <img src="/src/main/resources/static/img/main/contenido/gantzportada.webp" alt="" />
+                    </div>
+                    <div class="texto">
+                        <img src="/src/main/resources/static/img/main/contenido/gantzlogo.webp" alt="" />
+                        <p style="color: black; font-size: 25px;">
+                            <strong>Sinopsis</strong>
+                        </p>
+                        <p>El estudiante de secundaria Kei Kurono es un joven egoísta y apático que tiene pocos
+                            intereses en la vida.
+                            Su vida cambia completamente cuando uno de sus compañeros de clase, Masaru Kato, le llama
+                            para salvar a un hombre
+                            de morir atropellado al caer en las vías del tren. Como consecuencia, tanto Kurono como Kato
+                            mueren en el intento.
+                            Poco después, los dos adolescentes se despiertan en un apartamento junto a otros chicos que
+                            están tan desorientados
+                            como ellos. En la misma sala, aparece una misteriosa esfera negra que les obliga a
+                            participar en un sádico juego
+                            que les llevará a una aventura sangrienta y brutal. Sólo aquellos que sobrevivan podrán
+                            volver a la vida.<br><br>
+
+                            Fecha de estreno: 13/04/2004 | 26/08/2004 (T2)<br>
+                            Duración: 26 episodios (23 min. por ep.)<br>
+                            Pais: Japón<br>
+                            Género: Acción | Drama | Terror | Ciencia-Ficción | Ecchi | Gore | Supervivencia<br>
+                            Productora: Gonzo<br>
+                            Distribuidora: Netflix<br>
+                            Director: Ichirou Atano<br>
+                            Guionista: Masashi Sogo
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+</body>
+
+<footer style="background-color: #000000; color:white; text-align: center; padding: 20px;">
+    <p>&copy; 2023 My Anime Web Diego Ramirez. Todos los derechos reservados.</p>
+</footer>
+
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/myscript.js"></script>
+
+
+</html>

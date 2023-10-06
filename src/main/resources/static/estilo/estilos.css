@@ -1,0 +1,150 @@
+.header {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    z-index: 3;
+
+    /*Color de fondo de la barra lateral */
+    border-bottom: 1px solid black;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    /* Ajusta el espaciado interno del contenedor del logo según tus necesidades */
+    width: 32%;
+}
+
+
+.logo-img {
+    height: 79px;
+    /* Ajusta según el tamaño deseado */
+
+}
+
+.nav-container .btn{
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #990909;
+    margin-top: 18px;
+     border: 1px solid black;
+}
+
+
+.active {
+    background-color: #ffffff !important;
+    color: #990909 !important;
+    border: 1px solid black !important;
+}
+
+.btn:hover {
+    color: #000000 !important;
+    ;
+    /* Cambia este valor al color que desees cuando se pasa el mouse sobre el botón */
+    background-color: #ffffff !important;
+    border: 1px solid black !important;
+}
+
+
+.carousel {
+    border-bottom: 1px solid black;
+    background-color: lightgray;
+    width: 100%;
+    padding: 0px;
+    margin-top: 75px;
+}
+
+/* Estilos para el contenido de la página */
+/* bloque central */
+.main-content {
+    width: 80%;
+    background-color: rgb(231, 214, 214);
+    margin: 0 auto;
+    margin-left: 12%;
+}
+
+
+
+/* atributos de las imagenes bloque central */
+.contenido-home .imagenes img {
+    width: 300px;
+    height: 350;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    /* Espacio entre las imágenes y el texto */
+}
+
+
+
+/* atributos del bloque home central */
+.contenido-home {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.contenido-home  img {
+    width: 40%;
+}
+
+
+
+.titulo {
+    width: 80%;
+    margin: 0 12%;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #990000;
+    text-align: center;
+
+}
+
+
+/* Estilos Header */
+.container-fluid {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    z-index: 5;
+    background-color: #e4bf1a;
+    /*Color de fondo de la barra lateral */
+    border-bottom: 1px solid black;
+}
+
+
+/* Estilos el toggler del lado derecho */
+.navbar-toggler {
+    /* Ajusta esto según tus necesidades para ajustar el tamaño de la imagen */
+    width: 50px;
+    /* Ajusta el ancho según tus necesidades */
+    height: 50px;
+    /* Ajusta la altura según tus necesidades */
+    /* Elimina el borde del botón si lo deseas */
+
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    background-color: transparent;
+    /* Cambia esto según tus necesidades */
+}
+
+section {
+    background-color: #e4bf1a;
+}
+
+.reglon {
+    border: 2px solid #990000;
+    border-top: 3px double #990000;
+    color: #990000;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+  }

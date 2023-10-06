@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mi pagin web para la tarea de la U">
+        <meta name="keywords" content="html5, css3, web, fidélitas">
+        <link rel="stylesheet" type="text/css" href="estilo/estilos.css">
+        <link rel="stylesheet" type="text/css" href="estilo/estilo_lateral.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                    <div class="container-fluid d-flex justify-content-center align-items-center">
+                        <!-- Botones Izquierda -->
+                        <div class="nav-container">
+                            <ul class="nav nav-pills mb-3" id="menu-principal1" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a href="openings.html" class="btn btn-primary btn-lg me-3 rounded-pill" tabindex="-1" role="button" aria-disabled="true">Openings</a>
+                                </li>                          
+                                <li class="nav-item" role="presentation">
+                                    <a href="endings.html" class="btn btn-primary btn-lg me-3 rounded-pill active" tabindex="-1" role="button" aria-disabled="true">Endings</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Logo -->
+                        <div class="logo-container" id="logo">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="img/main/logo.svg" class="logo-img">
+                            </a>
+                        </div>
+
+                        <!-- Botones Derecha -->
+                        <div class="nav-container">
+                            <ul class="nav nav-pills mb-3" id="menu-principal2" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a href="personajes.html" class="btn btn-primary btn-lg me-3 rounded-pill" tabindex="-1" role="button" aria-disabled="true">Personajes</a>
+                                </li>                          
+                                <li class="nav-item" role="presentation">
+                                     <a href="wallpaper.html" class="btn btn-primary btn-lg me-3 rounded-pill" tabindex="-1" role="button" aria-disabled="true">Walpapers</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a class="navbar-brand" href="#"></a>
+
+                        <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style =" background: url('img/main/toggler.gif') no-repeat center center; background-size: contain;">
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                             aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Enlace</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Acción</a></li>
+                                            <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+
+
+            <!-- Alerta de cookies -->
+            <div class="alert alert-warning alert-dismissible fade show fixed-bottom" role="alert"
+                 style="text-align: center;">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                <strong> Esta página usa Cookies 🍪 para su funcionamiento. </strong>
+                <button type="button" class="btn btn-success" data-bs-dismiss="alert" id="acceptButton">ACEPTAR</button>
+            </div>
+
+            <!-- Barra de navegación Flotante-->
+            <div class="vh-100 d-flex align-items-center position-fixed start-0 top-0" role="navigation">
+                <div class="p-2">
+                    <div id="mainNav">
+                        <button id="toggleMenu" class="btn btn-info" style=" color: #ffffff; height: 35px;
+                                width: 72px; text-align: center; background: #810505; margin-left: 10%; border: 1px solid black;">
+                            Ocultar
+                        </button>
+                        <ul class="list-unstyled rounded ms-2" id="menu-secundario">
+                            <li>
+                                <a class="vlink rounded border-0" href="https://www.facebook.com/ufidelitas/?locale=es_LA">
+                                    <img src="img/main/facebook.svg" alt="Facebook">
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <br>
+                            <li>
+                                <a class="vlink rounded border-0" href="#">
+                                    <img src="img/main/whatsapp.svg" alt="WhatsApp">
+                                    <span>WhatsApp</span>
+                                </a>
+                            </li><br>
+                            <li>
+                                <a class="vlink rounded border-0" href="#">
+                                    <img src="img/main/instagram.svg" alt="Instagram">
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <br>
+                            <li>
+                                <a class="vlink rounded border-0" href="#">
+                                    <img src="img/main/youtube.svg" alt="YouTube">
+                                    <span>YouTube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Carrusel-->
+        <section>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Naruto"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Sasuke"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Itachi"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                            aria-label="Kakashi"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                            aria-label="Sai"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="img/banners/Naruto.jpg" class="d-block w-100" alt="Naruto"
+                             height="180">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="img/banners/Sasuke.jpg" class="d-block w-100" alt="Sasuke"
+                             height="180">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="img/banners/Itachi.jpg" class="d-block w-100" alt="Itachi"
+                             height="180">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="img/banners/Kakashi.jpg" class="d-block w-100" alt="Kakashi"
+                             height="180">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="img/banners/Sai.jpg" class="d-block w-100" alt="Sai"
+                             height="180">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+            <div class="titulo">
+                <p>¡Bienvenido! Este es mi Top 5 de animes </p>
+            </div>
+
+            <!-- Bloque Naruto -->
+            <div class="main-content">
+                <div class="main-content">
+                    <div class="contenido-home">
+                        <div class="imagenes">                      
+                        </div>
+                        <div class="texto">
+                            <br>
+                            <img src="img/main/contenido/naruto logo.svg" alt="" />
+                            <p style="color: black; font-size: 25px;">
+                                <strong>Ending Naruto Shippuden</strong>
+                            </p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rHB2vlTFEiA?si=zogZ3OuiAkUAteWU" 
+                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <hr class="reglon" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque One Piece -->
+                <div class="main-content">
+                    <div class="contenido-home">
+                        <div class="imagenes">                      
+                        </div>
+                        <div class="texto">
+                            <br>
+                             <img src="img/main/contenido/gantzlogo.webp" alt="" />
+                            <p style="color: black; font-size: 25px;">
+                                <strong>Ending de Gantz</strong>
+                            </p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AETUjfvcdbE?si=_nJaZFbPNX9qi8UH" 
+                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <hr class="reglon" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-content">
+                    <div class="main-content">
+                        <div class="contenido-home">
+                            <div class="imagenes">                      
+                            </div>
+                            <div class="texto">
+                                <br>
+                                <img src="img/main/contenido/bakilogo.svg" alt="" />
+                                <p style="color: black; font-size: 25px;">
+                                    <strong>Ending de Baki</strong>
+                                </p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/gG7M2UHjO1I?si=2e9tAAFbDm0NXnms" 
+                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <hr class="reglon" />
+                            </div>
+                        </div>
+                    </div>
+
+                    </section>
+                    </body>
+
+                    <footer style="background-color: #000000; color:white; text-align: center; padding: 20px;">
+                        <p>&copy; 2023 My Anime Web Diego Ramirez. Todos los derechos reservados.</p>
+                    </footer>
+
+                    <script src="bootstrap/js/jquery.min.js"></script>
+                    <script src="bootstrap/js/popper.min.js"></script>
+                    <script src="bootstrap/js/bootstrap.min.js"></script>
+                    <script src="bootstrap/js/myscript.js"></script>
+
+
+                    </html>
